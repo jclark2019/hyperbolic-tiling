@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently --names \"ESBUILD,HTTP\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run serve\" \"npm run watch\"",
-    "serve": "servez -p 8080",
+    "serve": "serve -p 8080",
     "watch": "node watch.mjs"
   },
   "author": "Lewy Blue",
@@ -14,6 +14,7 @@
     "concurrently": "^6.0.0",
     "esbuild": "^0.11.3",
     "esbuild-glslify": "github:ayamflow/esbuild-glslify",
+    "serve": "^14.2.6",
     "servez": "^1.11.0"
   },
   "dependencies": {
